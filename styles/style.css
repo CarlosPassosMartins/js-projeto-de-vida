@@ -15,7 +15,6 @@ body {
     font-family: 'Chakra Petch', sans-serif;
 }
 
-
 .conteudo-principal {
     display: flex;
     flex-direction: column;
@@ -26,8 +25,9 @@ body {
     margin: 0 auto;
 }
 
+
 .titulo-principal {
-    text-align: left;
+    text-align: center; /* gosto mais do texto no centro */
     width: 100%;
     font-size: 32px;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 
-.botao {
+.bnt {
     font-family: 'Chakra Petch', sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
@@ -53,7 +53,7 @@ body {
     border-top: none;
 }
 
-.botao:first-child {
+.bnt:first-child {
     border-radius: 40px 40px 0 0;
 }
 
@@ -61,7 +61,7 @@ body {
     display: block;
 }
 
-.botao.ativo {
+.bnt.ativo {
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
@@ -90,6 +90,9 @@ body {
     color: var(--verde);
     text-transform: uppercase;
 }
+
+
+/* --- seção de conteudo --- */
 
 .contador {
     display: flex;
@@ -121,11 +124,11 @@ body {
         display: flex;
     }
 
-    .botao:first-child {
+    .bnt:first-child {
         border-radius: 40px 0 0 0;
     }
 
-    .botao:last-child {
+    .bnt:last-child {
         border-radius: 0 40px 0 0;
     }
 }
